@@ -3,20 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Website</title>
+    <title>Futuristic Front Page</title>
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
     <header>
-        <h1>Welcome to My Website</h1>
+        <h1>Futuristic Human Anatomy</h1>
     </header>
     <main>
-        <section>
-            <h2>About Me</h2>
-            <p>This is a brief description about me.</p>
+        <section id="anatomy-diagram">
+            <img src="images/human-body.png" alt="Human Body" usemap="#human-map">
+            <map name="human-map">
+                <area shape="poly" coords="..." href="#" alt="Bicep" data-muscle="Bicep">
+                <area shape="poly" coords="..." href="#" alt="Tricep" data-muscle="Tricep">
+                <!-- Add more areas for each muscle -->
+            </map>
+        </section>
+        <section id="muscle-info">
+            <h2 id="muscle-name">Hover over a muscle</h2>
+            <p id="muscle-description">Information about the muscle will appear here.</p>
         </section>
     </main>
-    <footer>
-        <p>&copy; 2024 My Website</p>
-    </footer>
+    <script src="js/scripts.js"></script>
 </body>
 </html>
