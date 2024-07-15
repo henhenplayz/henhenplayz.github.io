@@ -3,25 +3,47 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Futuristic Front Page</title>
+    <title>AI Stretching Guide</title>
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
     <header>
-        <h1>Futuristic Human Anatomy</h1>
+        <h1>AI Stretching Guide</h1>
+        <p>Select the areas of your body that hurt or feel stressed to get recommended stretches.</p>
     </header>
     <main>
+        <section id="why-stretching">
+            <h2>Why Stretching is Important</h2>
+            <p>Stretching is a vital part of maintaining a healthy lifestyle. It helps improve flexibility, reduce the risk of injury, and alleviate muscle tension and stress. Regular stretching can also enhance your range of motion and improve circulation.</p>
+            <ul>
+                <li>Improves flexibility</li>
+                <li>Reduces risk of injury</li>
+                <li>Alleviates muscle tension and stress</li>
+                <li>Enhances range of motion</li>
+                <li>Improves circulation</li>
+            </ul>
+        </section>
         <section id="anatomy-diagram">
-            <img src="images/human-body.png" alt="Human Body" usemap="#human-map">
+            <img src="images/humanBody.jpg" alt="Human Body" usemap="#human-map">
             <map name="human-map">
-                <area shape="poly" coords="..." href="#" alt="Bicep" data-muscle="Bicep">
-                <area shape="poly" coords="..." href="#" alt="Tricep" data-muscle="Tricep">
+                <!-- Define each muscle area here -->
+                <area shape="poly" coords="100,150,120,160,110,180,90,170" href="#" alt="Bicep" data-muscle="Bicep">
+                <area shape="poly" coords="130,200,150,210,140,230,120,220" href="#" alt="Tricep" data-muscle="Tricep">
                 <!-- Add more areas for each muscle -->
             </map>
         </section>
-        <section id="muscle-info">
-            <h2 id="muscle-name">Hover over a muscle</h2>
-            <p id="muscle-description">Information about the muscle will appear here.</p>
+        <section id="selection">
+            <h2>Selected Areas</h2>
+            <ul id="selected-muscles">
+                <!-- Selected muscles will be listed here -->
+            </ul>
+            <button id="get-stretches">Get Recommended Stretches</button>
+        </section>
+        <section id="stretches">
+            <h2>Recommended Stretches</h2>
+            <div id="stretch-list">
+                <!-- Recommended stretches will be displayed here -->
+            </div>
         </section>
     </main>
     <script src="js/scripts.js"></script>
